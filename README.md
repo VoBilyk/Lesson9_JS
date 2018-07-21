@@ -1,12 +1,7 @@
-# js-es
-JS project
+# Hometask 9 for Binary Studio Academy 2018
+* created simple JS program
 
-# Instalation
-install npm<br />
-
-#### run in terminal
-npm install<br />
-webpack<br />
-npm run start<br />
-<br />
-localhost:4040
+## How to run:
+* npm install<br />
+* webpack<br />
+* npm run start<br />
