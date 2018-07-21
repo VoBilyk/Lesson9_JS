@@ -1,5 +1,5 @@
-class Fighter {
-    constructor(name, power, health) {
+export default class Fighter {
+    constructor(name, power = 5, health = 100) {
         this.name = name;
         this.power = power;
         this.health = health;
@@ -7,11 +7,11 @@ class Fighter {
 
     setDamage(damage) {
         this.health -= damage;
-        console.log('health: ${this.health}');
+        console.log(`Name: ${this.name}, health: ${this.health}`);
     }
 
     hit(enemy, point) {
-        let damage = point * power;
+        let damage = point * this.power;
         enemy.setDamage(damage);
     }
 
@@ -24,5 +24,3 @@ class Fighter {
         });
     }
 }
-
-export { Fighter };

@@ -1,7 +1,7 @@
 import Fighter from './fighter.js'
 
-class ImprovedFighter extends Fighter {
-    constructor(name, power, health) {
+export default class ImprovedFighter extends Fighter {
+    constructor(name, power = 5, health = 100) {
         super(name, power, health);
     }
 
@@ -9,5 +9,3 @@ class ImprovedFighter extends Fighter {
         this.hit(enemy, point * 2)
     }
 }
-
-export { ImprovedFighter };
